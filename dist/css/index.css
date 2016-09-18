@@ -1,0 +1,166 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei";
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+    color: #666;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+* {
+	color: #666;
+}
+ul li {
+    list-style: none;
+}
+.navbar {
+	height: 237px;
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 0px;
+}
+.navbar .navbar-header {
+	width: 100%;
+	padding-top: 30px;
+}
+.navbar-header .navbar-top {
+	margin-bottom: 15px;
+}
+.navbar-header .top-shop {
+    width: 105px;
+    height: 30px;
+    padding-top: 5px;
+    border-radius: 0px;
+    background-color: #f5f6f6;
+    top: 30px;
+    position: absolute;
+}
+.navbar-header .top-logo {
+	width: 105px;
+	height: 150px;
+	margin-left: 450px;
+
+}
+.navbar-header .top-tell {
+	float: right;
+}
+.container .navbar-header .navbar-tab{
+	background: url('/dist/image/header2.png') no-repeat scroll center top;
+	width: 980px;
+	height: 50px;
+	margin: 0 auto;
+}
+.navbar-header li {
+	width: 110px;
+	height: 45px;
+	float: left;
+	margin-right: 50px;
+}
+
+.navbar-header li.joinus {
+	margin-left: 35px;
+	margin-right: 55px;
+
+}
+.navbar-header li.story {
+	margin-right: 55px;
+}
+.navbar-header li.contactus {
+	margin: 0px;
+}
+.navbar-header li em {
+	background: url('/dist/image/hover.png') no-repeat scroll center left;
+	width: 45px;
+	height: 47px;
+    margin-top: -25px;
+    margin-left: 15px;
+}
+.navbar-header li:hover em{
+	display: block;
+}
+.navbar-header li.active em{
+	display: block;
+}
+.navbar-header li a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin-top: -25px;
+}
+.container {
+	width: 1000px;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.index-footer {
+	height: 160px;
+	padding: 20px 0px;
+	border-top:1px solid #666;
+}
+.index-footer .footer-logo ,.index-footer .footer-center li {
+	float: left;
+}
+.index-footer .footer-center {
+	float: left;
+	padding-left: 20px;
+}
+.index-footer .footer-center ul{
+	padding-bottom: 65px;
+}
+.index-footer .footer-center li>a {
+	font-size: 16px;
+	color: #666;
+	margin-right: 30px;
+}
+.index-footer .footer-tell {
+	float: right;
+}
+.container-img img {
+	width: 970px;
+}
+/* these styles are for the demo, but are not required for the plugin */
+.zoom {
+	display:inline-block;
+	position: relative;
+}
+
+/* magnifying glass icon */
+.zoom:after {
+	content:'';
+	display:block;
+	width:33px;
+	height:33px;
+	position:absolute;
+	top:0;
+	right:0;
+
+}
+
+.zoom img {
+	display: block;
+}
+
+.zoom img::selection { background-color: transparent; }

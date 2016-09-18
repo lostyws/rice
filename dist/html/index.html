@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>初稻·活米</title>
+		<meta name="keywords" content="活米、五常、死米、有机、生态、生态活米、胚芽米、活谷、大米、添芽">
+		<meta name="description" content="【初始者，大稻自然】大米不仅仅是种“饱腹”的食物，也不应该仅仅是种关于“口感”和“味蕾”的食材，它本是一种传承了几千年中国文化的“诚食”和“善粮”。">
+
+		<!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
+
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<link rel="shortcut icon" href="/dist/image/favicon.ico" type="image/x-icon"/>
+		<link href="/dist/lib/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/dist/lib/plugins/swiper/3.3.1/swiper.min.css">
+        <link href="/dist/css/index.css" rel="stylesheet">
+
+
+	</head>
+    <body>
+	<style type="text/css">
+		.container-logo {
+		    position: relative;
+		    z-index: 1000;
+		    height: 240px;
+		    margin-bottom: -240px;
+		}
+		.container-logo .index-logo {
+	    	margin-right: -175px;
+	    	height: 0px;
+	    	overflow: hidden;
+	    }
+		@media screen and (min-width: 1000px) and (max-width: 1320px)  {
+		    .container-logo .index-logo {
+		    	margin-right: -15px;
+		    }
+		    
+		}
+		@media screen and (min-width: 100px) and (max-width: 500px)  {
+		    
+		    .swiper-container {
+		        height: initial;
+		    }
+		    .container-logo .index-logo {
+		        margin-right: 0px;
+		    }
+		}
+		
+		.navbar-index {
+			margin-top: 0px;
+		    overflow: hidden;
+		    background: transparent;
+		    z-index: 1000;
+		    position: fixed;
+		}
+		.navbar-index .navbar-header {
+			padding-top: 45px;
+		}
+
+		.navbar-index .container {
+			background-color: #fff;
+			height: 106px;
+		}
+		@media screen and (max-width: 500px) {
+		    .swiper-container {
+		        height: 506px;
+		    }
+		    .container-logo .index-logo {
+		        margin-right: 0px;
+		    }
+		}
+		.swiper-container-min {
+			height: initial;
+		}
+		.container-logo-min .index-logo {
+	        margin-right: 0px;
+	    }
+	</style>
+
+	<div class="container text-right container-logo">
+		<div class="index-logo">
+			<img src="/dist/image/index/logo.png" alt="初稻">
+		</div>
+	</div>
+
+	<!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<img src="/dist/image/index/banner1.jpg" class="img-responsive">
+            </div>
+            <div class="swiper-slide">
+            	<img src="/dist/image/index/banner2.jpg" class="img-responsive">
+            </div>
+            <div class="swiper-slide">
+            	<img src="/dist/image/index/banner3.jpg" class="img-responsive">
+            </div>
+            <div class="swiper-slide">
+            	<img src="/dist/image/index/banner4.jpg" class="img-responsive">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+        <!-- Add Arrows -->
+        <!-- <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div> -->
+
+    </div>
+    <nav class="navbar navbar-index">
+        <div class="container">
+            <div class="navbar-header">
+
+            	<ul class="navbar-tab-warp">
+        			<li class="joinus"><em></em><a href="joinus.html"></a></li>
+        			<li class="product"><em></em><a href="product.html"></a></li>
+        			<li class="story"><em></em><a href="story.html"></a></li>
+        			<li class="brand"><em></em><a href="brand.html"></a></li>
+        			<li class="newslist"><em></em><a href="newslist.html"></a></li>
+        			<li class="contactus"><em></em><a href="contactus.html"></a></li>
+        		</ul>
+            	<div class="navbar-tab">
+
+            	</div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    </body>
+    <script src="/dist/lib/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dist/lib/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="/dist/lib/plugins/swiper/3.3.1/swiper.jquery.min.js"></script>
+   	<script>
+   	(function(){
+   		
+   		
+   		if (navigator.userAgent.match(/mobile/i)) {
+   		
+   			$('.swiper-container').addClass('swiper-container-min');
+   			$('.container-logo').addClass('container-logo-min');
+   		}
+
+   		var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        // paginationClickable: '.swiper-pagination',
+	        // nextButton: '.swiper-button-next',
+	        // prevButton: '.swiper-button-prev',
+	        spaceBetween: 30,
+	        autoplay : 3500,//3s
+	        loop : true,//无限循环
+	        effect: 'fade',//渐变
+	        onInit: function(swiper){
+		       //Swiper初始化了
+		       $(".index-logo").animate({
+	                height: 240,
+	                opacity: 'show'
+	            });
+	            $('.navbar-index').animate({
+	            	marginTop: -107,
+	                opacity: 'show'
+	            })
+		    }
+	    });
+	    
+
+
+	
+   	})()
+
+    </script>
+
+
+
+</html>
